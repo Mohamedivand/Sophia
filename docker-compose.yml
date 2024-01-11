@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  stock-management:
+    image: php:7.4-fpm
+    volumes:
+      - ./stock-management:/var/www
+    ports:
+      - "8000:8000"
+  comptabilite:
+    image: php:7.4-fpm
+    volumes:
+      - ./comptabilite:/var/www
+    ports:
+      - "8001:8000"
