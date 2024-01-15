@@ -8,3 +8,7 @@ services:
     build: ./comptabilite
     ports:
       - "8001:80"
+  authentification:
+    build: ./authentification
+    ports:
+      - "8002:80"
